@@ -54,6 +54,7 @@ class _Discretizer:
         return [len(ref) if kind == "values" else len(ref) + 1 for kind, ref in self.maps_]
 
 
+# source: Maulidevi (2024), "Bayes Net", IF3170 lecture slides.
 class NaiveBayes(BaseClassifier):
 
     def __init__(self, continuous="discretize", n_bins=10, alpha=1.0, var_smoothing=1e-9,
@@ -145,6 +146,7 @@ class NaiveBayes(BaseClassifier):
         return p / p.sum(axis=1, keepdims=True)
 
 
+# source: Friedman, Geiger & Goldszmidt (1997), "Bayesian Network Classifiers", Machine Learning 29.
 class TreeAugmentedNaiveBayes(BaseClassifier):
 
     def __init__(self, n_bins=10, alpha=1.0, categorical_features=None, root=None):
@@ -171,6 +173,7 @@ class TreeAugmentedNaiveBayes(BaseClassifier):
             terms = np.where(p_cab > 0, p_cab * np.log(ratio), 0.0)
         return float(terms.sum())
 
+    # source: Chow & Liu (1968), "Approximating Discrete Probability Distributions with Dependence Trees", IEEE Trans. Information Theory 14(3).
     @staticmethod
     def maximum_spanning_tree(weights, root):
         d = len(weights)

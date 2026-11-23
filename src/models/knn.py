@@ -32,6 +32,10 @@ def elementwise_sq_distances(Q: np.ndarray, X: np.ndarray, weights=None) -> np.n
     return out
 
 
+# source: IF3170 lecture slides, Materi 10b (kNN).
+# source (distance-weighted vote): Dudani (1976), "The Distance-Weighted k-Nearest-Neighbor Rule", IEEE Trans. Systems, Man, and Cybernetics SMC-6(4).
+# source (feature weights): Wettschereck, Aha & Mohri (1997), "A Review and Empirical Evaluation of Feature Weighting Methods for a Class of Lazy Learning Algorithms", Artificial Intelligence Review 11.
+# source (missing-value distance 'max'): Wilson & Martinez (1997), "Improved Heterogeneous Distance Functions", Journal of Artificial Intelligence Research 6.
 class KNNClassifier(BaseClassifier):
     def __init__(self, n_neighbors=5, metric="euclidean", p=2, weights="uniform",
                  feature_weights=None, categorical_features=None, missing="ignore",
@@ -122,6 +126,7 @@ class KNNClassifier(BaseClassifier):
             total **= 1.0 / self._order
         return total
 
+    # source: Dixon (1979), "Pattern Recognition with Partly Missing Data", IEEE Trans. Systems, Man, and Cybernetics 9(10).
     def _masked_euclidean(self, Q: np.ndarray) -> np.ndarray:
         w = self._fw
         mq = (~np.isnan(Q)).astype(float)

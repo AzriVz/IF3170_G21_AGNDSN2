@@ -45,6 +45,10 @@ class _Node:
         self.feature = self.threshold = self.left_categories = self.known_categories = None
 
 
+# source: IF3170 lecture slides, Materi 10a (Decision Tree) and 10c (Issues in Decision Tree).
+# source: Breiman, Friedman, Olshen & Stone (1984), "Classification and Regression Trees", Wadsworth.
+# source (missing values 'fractional'): Quinlan (1993), "C4.5: Programs for Machine Learning", Morgan Kaufmann.
+# source (missing values 'learned'): Chen & Guestrin (2016), "XGBoost: A Scalable Tree Boosting System", KDD, Algorithm 3 (sparsity-aware split finding).
 class CARTClassifier(BaseClassifier):
     def __init__(self, criterion="gini", max_depth=None, min_samples_split=2,
                  min_samples_leaf=1, min_impurity_decrease=0.0, missing="learned",
@@ -183,6 +187,7 @@ class CARTClassifier(BaseClassifier):
         thresholds = np.where(thresholds == xs[boundary + 1], xs[boundary], thresholds)
         return cum[boundary], thresholds
 
+    # source: Breiman et al. (1984), "Classification and Regression Trees"; Fisher (1958), "On Grouping for Maximum Homogeneity", Journal of the American Statistical Association 53.
     def _categorical_candidates(self, x, y, w):
         codes = x.astype(np.int64)
         present = np.unique(codes)
@@ -334,6 +339,7 @@ class CARTClassifier(BaseClassifier):
                 best_nodes.append(node)
         return best_alpha, best_nodes
 
+    # source: Breiman et al. (1984), "Classification and Regression Trees" (minimal cost-complexity pruning).
     def prune_cost_complexity(self, ccp_alpha):
         while not self.root_.is_leaf:
             alpha, nodes = self._weakest_links()
@@ -365,6 +371,7 @@ class CARTClassifier(BaseClassifier):
         tree = copy.deepcopy(self)
         return tree.prune_cost_complexity(ccp_alpha)
 
+    # source: Quinlan (1987), "Simplifying Decision Trees", International Journal of Man-Machine Studies 27.
     def prune_reduced_error(self, X_val, y_val):
         X_val = self._check_X(X_val, allow_nan=True)
         y_val = np.searchsorted(self.classes_, np.asarray(y_val))

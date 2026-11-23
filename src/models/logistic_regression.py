@@ -8,9 +8,13 @@ def sigmoid(z):
     return 1.0 / (1.0+np.exp(-z))
 
 # kill a feature if not significant to prevent overfitting
+# source: Parikh & Boyd (2014), "Proximal Algorithms", Foundations and Trends in Optimization 1(3).
+# source: Langford, Li & Zhang (2009), "Sparse Online Learning via Truncated Gradient", JMLR 10.
 def soft_threshold(v, t):
     return np.sign(v) * np.maximum(np.abs(v) - t, 0.0)
 
+# source: IF3170 lecture slides, Materi 11 (Linear & Logistic Regression).
+# source: Elkan (2014), "Maximum Likelihood, Logistic Regression, and Stochastic Gradient Training", UCSD lecture notes.
 class LogisticRegression(BaseClassifier):
     # penalty -> "none", "l1", "l2", "elasticnet"
     # solver -> "sga", "minibatch", "batch", "adam", "newton"
@@ -153,10 +157,12 @@ class LogisticRegression(BaseClassifier):
     def _fit_batch(self, A, y, sw, b, lam2, lam1):
         return self._gradient_loop(A, y, sw, b, lam2, lam1, batch=len(y))
 
+    # source: Kingma & Ba (2015), "Adam: A Method for Stochastic Optimization", ICLR.
     def _fit_adam(self, A, y, sw, b, lam2, lam1):
         return self._gradient_loop(A, y, sw, b, lam2, lam1, batch=self.batch_size, use_adam=True)
     
     # newton algorithm
+    # source: Hastie, Tibshirani & Friedman (2009), "The Elements of Statistical Learning", 2nd ed. (Newton-Raphson / IRLS).
     def _fit_newton(self, A, y, sw, b, lam2, lam1):
         n = len(y)
         mask = self._mask(b)
@@ -187,6 +193,7 @@ class LogisticRegression(BaseClassifier):
         return b
 
     
+    # source: Lee, Sun & Saunders (2014), "Proximal Newton-Type Methods for Minimizing Composite Functions", SIAM Journal on Optimization 24(3).
     @staticmethod
     def _prox_newton_direction(H, g, b, mask, lam1, sweeps=100):
         d = np.zeros_like(b)

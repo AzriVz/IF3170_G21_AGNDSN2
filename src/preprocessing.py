@@ -142,7 +142,7 @@ class Imputer(Step):
         return out
 
 
-# Sumber: Troyanskaya dkk. (2001), "Missing value estimation methods for DNA microarrays", Bioinformatics 17(6).
+# source: Troyanskaya et al. (2001), "Missing Value Estimation Methods for DNA Microarrays", Bioinformatics 17(6).
 class KNNRegressionImputer(Step):
     NUMERIC_CONTEXT = ["arrival_ord", "days_before_arrival", "nightly_rate_idr", "special_requests",
                        "total_nights", "num_adults", "num_children", "needs_parking", "is_returning_guest"]
