@@ -15,11 +15,10 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from src.config import svm_pipeline
 from src.data import development_split, load_competition_data
 from src.metrics import best_threshold, macro_f1
 from src.models import SVC
-from src.preprocessing import TARGET
+from src.preprocessing import TARGET, make_pipeline
 from src.validation import StratifiedKFold, stratified_split
 
 FOLDS, Y = [], None
@@ -33,7 +32,7 @@ def prepare(n, seed):
     _, idx = stratified_split(y, test_size=n / len(y), random_state=seed)
     sub, Y = dev.iloc[idx], y[idx]
     for tr, va in StratifiedKFold(3, True, seed).split(Y):
-        pipe = svm_pipeline()
+        pipe = make_pipeline()
         FOLDS.append((pipe.fit_transform(sub.iloc[tr], Y[tr]), Y[tr], pipe.transform(sub.iloc[va]), va))
 
 
