@@ -1,0 +1,17 @@
+feature,parent feature,CMI
+room_category_code,nightly_rate_idr,0.16201247022112963
+arrival_month,days_before_arrival,0.14082999860752987
+booking_channel_code,nightly_rate_idr,0.12937379414375083
+nightly_rate_idr,arrival_month,0.12802126184491877
+special_requests,booking_channel_code,0.11951958699644366
+arrival_year,arrival_month,0.11681348858677844
+num_children,room_category_code,0.10922220215129601
+weekend_nights,weekday_nights,0.09734359271059356
+num_adults,room_category_code,0.08627799625640131
+arrival_day,days_before_arrival,0.08390810491502212
+meal_package_code,booking_channel_code,0.08237469385984791
+weekday_nights,days_before_arrival,0.05685637596889677
+is_returning_guest,booking_channel_code,0.038065331540293866
+prior_cancellations,is_returning_guest,0.03207629374479718
+needs_parking,booking_channel_code,0.00908058795101599
+prior_completed_bookings,days_before_arrival,2.2204460492503126e-16

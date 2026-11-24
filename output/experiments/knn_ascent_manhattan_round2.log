@@ -1,0 +1,8 @@
+features=44 impute=median knn_impute=('days_before_arrival', 'nightly_rate_idr') metric=manhattan vote=distance power=2.0 seed=7
+start: F1=0.8502 k=30 thr=0.48
+  round 1: arrival_month 1.0 -> 0.0  F1 0.8502 -> 0.8512 (k=20)
+  round 1: nightly_rate_idr 2.0 -> 1.5  F1 0.8512 -> 0.8517 (k=30)
+  round 1: arrival_ord 3.0 -> 2.0  F1 0.8517 -> 0.8524 (k=30)
+  round 1: booking_ord 0.0 -> 2.0  F1 0.8524 -> 0.8529 (k=25)
+  round 1: log_lead 0.0 -> 0.5  F1 0.8529 -> 0.8544 (k=40)
+end round 1: F1=0.8544 k=40 thr=0.48 evals=221

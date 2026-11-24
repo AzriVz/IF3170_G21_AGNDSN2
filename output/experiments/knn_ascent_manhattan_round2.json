@@ -1,0 +1,121 @@
+{
+  "args": {
+    "metric": "manhattan",
+    "power": 2.0,
+    "knn_impute": "days_before_arrival,nightly_rate_idr",
+    "seed": 7,
+    "rounds": 2,
+    "grid": "0,0.5,1,1.5,2,3",
+    "ks": "20,25,30,40",
+    "start": "knn_ascent_manhattan.json"
+  },
+  "weights": {
+    "days_before_arrival": 3.0,
+    "arrival_ord": 2.0,
+    "nightly_rate_idr": 1.5,
+    "special_requests": 2.0,
+    "booking_channel=Online Travel Agent": 1.0,
+    "booking_channel=Offline Agent": 1.0,
+    "booking_channel=Corporate": 1.0,
+    "total_nights": 1.0,
+    "num_adults": 0.5,
+    "needs_parking": 1.0,
+    "is_returning_guest": 1.0,
+    "weekend_nights": 0.5,
+    "arrival_day": 1.0,
+    "log_price": 2.0,
+    "room_category=Type C": 0.5,
+    "booking_ord": 2.0,
+    "log_lead": 0.5
+  },
+  "macro_f1": 0.8544,
+  "k": 40,
+  "threshold": 0.48,
+  "validation": {
+    "start": {
+      "n_features": 16,
+      "by_k": {
+        "20": {
+          "cv42@thr": 0.85168783198487,
+          "cv42_best": 0.85168783198487,
+          "cv0@thr": 0.8498610696546967,
+          "cv0_best": 0.8498967807117405,
+          "holdout@thr": 0.8561337283506321,
+          "cv_mean@thr": 0.8507744508197833
+        },
+        "25": {
+          "cv42@thr": 0.8517917970377391,
+          "cv42_best": 0.8522247628126145,
+          "cv0@thr": 0.8491847262782696,
+          "cv0_best": 0.8502516506524396,
+          "holdout@thr": 0.858273596176822,
+          "cv_mean@thr": 0.8504882616580043
+        },
+        "30": {
+          "cv42@thr": 0.8516982094661817,
+          "cv42_best": 0.8516982094661816,
+          "cv0@thr": 0.849746959501356,
+          "cv0_best": 0.8506504021992483,
+          "holdout@thr": 0.8569010630305438,
+          "cv_mean@thr": 0.8507225844837689
+        },
+        "40": {
+          "cv42@thr": 0.8514490676726314,
+          "cv42_best": 0.8518713830976583,
+          "cv0@thr": 0.8510544632740442,
+          "cv0_best": 0.8511890355194568,
+          "holdout@thr": 0.8556525135913429,
+          "cv_mean@thr": 0.8512517654733378
+        }
+      }
+    },
+    "round2": {
+      "n_features": 17,
+      "by_k": {
+        "20": {
+          "cv42@thr": 0.8516960921739458,
+          "cv42_best": 0.8517633503221251,
+          "cv0@thr": 0.8511793890531751,
+          "cv0_best": 0.8514572767802742,
+          "holdout@thr": 0.859972331463214,
+          "cv_mean@thr": 0.8514377406135605
+        },
+        "25": {
+          "cv42@thr": 0.8514183807789977,
+          "cv42_best": 0.8522452221236386,
+          "cv0@thr": 0.851723574236491,
+          "cv0_best": 0.852476055576006,
+          "holdout@thr": 0.8625000648845651,
+          "cv_mean@thr": 0.8515709775077444
+        },
+        "30": {
+          "cv42@thr": 0.8521692855760836,
+          "cv42_best": 0.852415754723447,
+          "cv0@thr": 0.8522681694324783,
+          "cv0_best": 0.8535638428755454,
+          "holdout@thr": 0.860390949306373,
+          "cv_mean@thr": 0.852218727504281
+        },
+        "40": {
+          "cv42@thr": 0.8527499839723371,
+          "cv42_best": 0.8529278757612728,
+          "cv0@thr": 0.8526043216918312,
+          "cv0_best": 0.8528803576035318,
+          "holdout@thr": 0.8600550494400687,
+          "cv_mean@thr": 0.8526771528320842
+        }
+      }
+    }
+  },
+  "note": "Putaran 2 dihentikan karena bobot putaran 1 sudah lolos validasi pada fold seed 42/0 dan hold-out.",
+  "log": [
+    "features=44 impute=median knn_impute=('days_before_arrival', 'nightly_rate_idr') metric=manhattan vote=distance power=2.0 seed=7",
+    "start: F1=0.8502 k=30 thr=0.48",
+    "  round 1: arrival_month 1.0 -> 0.0  F1 0.8502 -> 0.8512 (k=20)",
+    "  round 1: nightly_rate_idr 2.0 -> 1.5  F1 0.8512 -> 0.8517 (k=30)",
+    "  round 1: arrival_ord 3.0 -> 2.0  F1 0.8517 -> 0.8524 (k=30)",
+    "  round 1: booking_ord 0.0 -> 2.0  F1 0.8524 -> 0.8529 (k=25)",
+    "  round 1: log_lead 0.0 -> 0.5  F1 0.8529 -> 0.8544 (k=40)",
+    "end round 1: F1=0.8544 k=40 thr=0.48 evals=221"
+  ]
+}

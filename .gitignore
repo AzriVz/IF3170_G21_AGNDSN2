@@ -6,8 +6,3 @@ __pycache__/
 .pytest_cache/
 .matplotlib_cache/
 **/.matplotlib_cache/
-
-output/models/*
-output/figures/*
-output/submissions/*
-output/experiments/*

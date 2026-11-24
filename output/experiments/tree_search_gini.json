@@ -1,0 +1,1935 @@
+{
+  "args": {
+    "impute": "median",
+    "derived": "all",
+    "criterion": "gini",
+    "missing": "learned",
+    "depths": "8,10,12,14,18,none",
+    "leaves": "1,3,5,10,20",
+    "seed": 42,
+    "workers": 6,
+    "out": "output/experiments/tree_search_gini.json"
+  },
+  "results": [
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8312312278321203,
+      "best_macro_f1": 0.831707910299091,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8307381634526707,
+      "best_macro_f1": 0.8312143881881486,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8295663027600355,
+      "best_macro_f1": 0.8302260201689486,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8286729836565097,
+      "best_macro_f1": 0.8301562059136395,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8286998428983465,
+      "best_macro_f1": 0.8301369901605458,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8285067917571868,
+      "best_macro_f1": 0.8299197619439219,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8289316882613398,
+      "best_macro_f1": 0.829798780239075,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8286697069679843,
+      "best_macro_f1": 0.8295087201763006,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8286697069679843,
+      "best_macro_f1": 0.8295087201763006,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8286697069679843,
+      "best_macro_f1": 0.8295087201763006,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8286083537262774,
+      "best_macro_f1": 0.8294419736214224,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.828530568823249,
+      "best_macro_f1": 0.8293703702421067,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.828530568823249,
+      "best_macro_f1": 0.8293703702421067,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.828530568823249,
+      "best_macro_f1": 0.8293703702421067,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8284692910647623,
+      "best_macro_f1": 0.829303693867335,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8275360284071244,
+      "best_macro_f1": 0.8289387058382686,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8279790875091615,
+      "best_macro_f1": 0.828823921236361,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8279790875091615,
+      "best_macro_f1": 0.828823921236361,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8279790875091615,
+      "best_macro_f1": 0.828823921236361,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.827918217768902,
+      "best_macro_f1": 0.8287576275726964,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8272722167982192,
+      "best_macro_f1": 0.8287489903502225,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8270385584464718,
+      "best_macro_f1": 0.8283035927869673,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8282100018122286,
+      "best_macro_f1": 0.8282661960422812,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8280709994408084,
+      "best_macro_f1": 0.8281271407007071,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8267310786819846,
+      "best_macro_f1": 0.8279759962087565,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8273216608549974,
+      "best_macro_f1": 0.8279493195861107,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8247837742938832,
+      "best_macro_f1": 0.8278698268293828,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.826538734279389,
+      "best_macro_f1": 0.8278551751008696,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8252672082632195,
+      "best_macro_f1": 0.8277408910150729,
+      "threshold": 0.43
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8267257411393696,
+      "best_macro_f1": 0.8277123821028427,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8251978746795993,
+      "best_macro_f1": 0.8276748053011876,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8276126886885582,
+      "best_macro_f1": 0.8276685846636198,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8248459615341805,
+      "best_macro_f1": 0.8276328752677151,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8261205338208131,
+      "best_macro_f1": 0.8275716348999447,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8265878036917234,
+      "best_macro_f1": 0.8275146954113743,
+      "threshold": 0.48
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8259731764047743,
+      "best_macro_f1": 0.827481579464822,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8262999840230478,
+      "best_macro_f1": 0.8274767884578365,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8261548702903277,
+      "best_macro_f1": 0.8273960126364628,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8261548702903277,
+      "best_macro_f1": 0.8273960126364628,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8264498903472368,
+      "best_macro_f1": 0.8273767782637991,
+      "threshold": 0.48
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8261271763833369,
+      "best_macro_f1": 0.8273429749280075,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8259566401018843,
+      "best_macro_f1": 0.8272831473224823,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8258381435741323,
+      "best_macro_f1": 0.8271172836661488,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8258624902517377,
+      "best_macro_f1": 0.8270752648017194,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8247758156705554,
+      "best_macro_f1": 0.8269811016813836,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8247626171921001,
+      "best_macro_f1": 0.826979566771197,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.825802655454855,
+      "best_macro_f1": 0.8269779089026825,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8260386749526716,
+      "best_macro_f1": 0.8268673959033119,
+      "threshold": 0.49
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8260386749526716,
+      "best_macro_f1": 0.8268673959033119,
+      "threshold": 0.49
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8260386749526716,
+      "best_macro_f1": 0.8268673959033119,
+      "threshold": 0.49
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8259793254958064,
+      "best_macro_f1": 0.8268067524644723,
+      "threshold": 0.49
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8263764244909525,
+      "best_macro_f1": 0.8266349722425467,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8253650657970126,
+      "best_macro_f1": 0.8265760681074867,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8247045684653045,
+      "best_macro_f1": 0.82650919314472,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.824501843281928,
+      "best_macro_f1": 0.8264582638690312,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8251686098337687,
+      "best_macro_f1": 0.826444527141341,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.82519041105048,
+      "best_macro_f1": 0.8262758559208433,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8241201041945238,
+      "best_macro_f1": 0.8262754848339953,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8241201041945238,
+      "best_macro_f1": 0.8262754848339953,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8250441424382604,
+      "best_macro_f1": 0.8262516670861852,
+      "threshold": 0.57
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8252329896461631,
+      "best_macro_f1": 0.8261830867714952,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.824179461237017,
+      "best_macro_f1": 0.8261183385914466,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8242062937205528,
+      "best_macro_f1": 0.8259596229337176,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8244604256904041,
+      "best_macro_f1": 0.8259474119108698,
+      "threshold": 0.54
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8240037553247903,
+      "best_macro_f1": 0.8259465368333869,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8240037553247903,
+      "best_macro_f1": 0.8259465368333869,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8258868656766868,
+      "best_macro_f1": 0.8258868656766868,
+      "threshold": 0.5
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8246921078326812,
+      "best_macro_f1": 0.8258544510837804,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8242007974765553,
+      "best_macro_f1": 0.8255762448588593,
+      "threshold": 0.57
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8240821481596454,
+      "best_macro_f1": 0.8255440121815611,
+      "threshold": 0.57
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8242007974765553,
+      "best_macro_f1": 0.8255160173891548,
+      "threshold": 0.57
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8231662251885661,
+      "best_macro_f1": 0.8252857333050486,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8223189888149913,
+      "best_macro_f1": 0.8234941234691506,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8222135322101931,
+      "best_macro_f1": 0.8233452656580449,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.821855380468772,
+      "best_macro_f1": 0.8231153074887201,
+      "threshold": 0.44
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8206186648939529,
+      "best_macro_f1": 0.8230681972079008,
+      "threshold": 0.43
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8207255538853729,
+      "best_macro_f1": 0.8225573607960089,
+      "threshold": 0.53
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8190060866591607,
+      "best_macro_f1": 0.8225191328583925,
+      "threshold": 0.53
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8190060866591607,
+      "best_macro_f1": 0.8225191328583925,
+      "threshold": 0.53
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8190446692688043,
+      "best_macro_f1": 0.8222217878692216,
+      "threshold": 0.53
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8197168933087495,
+      "best_macro_f1": 0.82216572872541,
+      "threshold": 0.43
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8197168933087495,
+      "best_macro_f1": 0.82216572872541,
+      "threshold": 0.43
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8183061044095481,
+      "best_macro_f1": 0.8217272523178215,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8185397486936077,
+      "best_macro_f1": 0.8217200661246352,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8172187483636631,
+      "best_macro_f1": 0.8210443090239634,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8182806502854794,
+      "best_macro_f1": 0.8208984093024713,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8180800030118571,
+      "best_macro_f1": 0.8208450239402123,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8177229925348334,
+      "best_macro_f1": 0.8206287372663641,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8192222299792511,
+      "best_macro_f1": 0.8205893254176269,
+      "threshold": 0.49
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8191474231765539,
+      "best_macro_f1": 0.8205150441569105,
+      "threshold": 0.49
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8191474231765539,
+      "best_macro_f1": 0.8205150441569105,
+      "threshold": 0.49
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8191474231765539,
+      "best_macro_f1": 0.8205150441569105,
+      "threshold": 0.49
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8201261523329841,
+      "best_macro_f1": 0.8204049868366976,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8201261523329841,
+      "best_macro_f1": 0.8204049868366976,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8201261523329841,
+      "best_macro_f1": 0.8204049868366976,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8201261523329841,
+      "best_macro_f1": 0.8204049868366976,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8201261523329841,
+      "best_macro_f1": 0.8204049868366976,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8201261523329841,
+      "best_macro_f1": 0.8204049868366976,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8201261523329841,
+      "best_macro_f1": 0.8204049868366976,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8201261523329841,
+      "best_macro_f1": 0.8204049868366976,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8201261523329841,
+      "best_macro_f1": 0.8204049868366976,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8201261523329841,
+      "best_macro_f1": 0.8204049868366976,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8201261523329841,
+      "best_macro_f1": 0.8204049868366976,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8201261523329841,
+      "best_macro_f1": 0.8204049868366976,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8184402031950905,
+      "best_macro_f1": 0.820277375802526,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8186731100379805,
+      "best_macro_f1": 0.8202057037267998,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8196778458180869,
+      "best_macro_f1": 0.8201179042857223,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8185818816680006,
+      "best_macro_f1": 0.8201147274905761,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8195543235177234,
+      "best_macro_f1": 0.820096935708416,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8195543235177234,
+      "best_macro_f1": 0.820096935708416,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8194163073823653,
+      "best_macro_f1": 0.8200410821085207,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8197567438427381,
+      "best_macro_f1": 0.8200353794951051,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8197567438427381,
+      "best_macro_f1": 0.8200353794951051,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8197567438427381,
+      "best_macro_f1": 0.8200353794951051,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8193868781384586,
+      "best_macro_f1": 0.8200123623510163,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8182989419345861,
+      "best_macro_f1": 0.8199970840007935,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8184495212997662,
+      "best_macro_f1": 0.8199782815633929,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8182750889548083,
+      "best_macro_f1": 0.8199697409230415,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8195127513352227,
+      "best_macro_f1": 0.8199545817144795,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8181355778898856,
+      "best_macro_f1": 0.8198098905923824,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8183660610800545,
+      "best_macro_f1": 0.8198006634950029,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8192804038050958,
+      "best_macro_f1": 0.8197218775379119,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8194336649687775,
+      "best_macro_f1": 0.8197121271965849,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8194336649687775,
+      "best_macro_f1": 0.8197121271965849,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8194336649687775,
+      "best_macro_f1": 0.8197121271965849,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8194336649687775,
+      "best_macro_f1": 0.8197121271965849,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8190817257125063,
+      "best_macro_f1": 0.8195239060233923,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8190817257125063,
+      "best_macro_f1": 0.8195239060233923,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8190817257125063,
+      "best_macro_f1": 0.8195239060233923,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8176617865002427,
+      "best_macro_f1": 0.8194960435784853,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8188654818381407,
+      "best_macro_f1": 0.8194924384754632,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8190646069835638,
+      "best_macro_f1": 0.8193428716624253,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8187485156431571,
+      "best_macro_f1": 0.8192829888074644,
+      "threshold": 0.49
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8189662208275581,
+      "best_macro_f1": 0.819193856672414,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8189662208275581,
+      "best_macro_f1": 0.819193856672414,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8182885709923402,
+      "best_macro_f1": 0.8191493005043158,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.818783471589486,
+      "best_macro_f1": 0.8190122497265484,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8184065191266727,
+      "best_macro_f1": 0.8188498402772546,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8184065191266727,
+      "best_macro_f1": 0.8188498402772546,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8184065191266727,
+      "best_macro_f1": 0.8188498402772546,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8183625881935297,
+      "best_macro_f1": 0.8188068580212684,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8171250646437014,
+      "best_macro_f1": 0.8187095664228112,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8177155149017807,
+      "best_macro_f1": 0.8185788052974705,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8177674874686733,
+      "best_macro_f1": 0.818275046967045,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8169392745566797,
+      "best_macro_f1": 0.8179532878336319,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8174656398544433,
+      "best_macro_f1": 0.8176779157100514,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8143268965801693,
+      "best_macro_f1": 0.81766614002235,
+      "threshold": 0.43
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8170965138811987,
+      "best_macro_f1": 0.8176544864155754,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8170965138811987,
+      "best_macro_f1": 0.8176544864155754,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8170965138811987,
+      "best_macro_f1": 0.8175625468313846,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8172554279943463,
+      "best_macro_f1": 0.8174915082670668,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8136759712630559,
+      "best_macro_f1": 0.8173680236668651,
+      "threshold": 0.43
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8136759712630559,
+      "best_macro_f1": 0.8173680236668651,
+      "threshold": 0.43
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8160536859020355,
+      "best_macro_f1": 0.8172597087019715,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8145619590488673,
+      "best_macro_f1": 0.8165860998903995,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.814583409986646,
+      "best_macro_f1": 0.8164877944971918,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8146035204812395,
+      "best_macro_f1": 0.8163268984398375,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8145127157960743,
+      "best_macro_f1": 0.8162364246605673,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8134541036721983,
+      "best_macro_f1": 0.8162172463296044,
+      "threshold": 0.53
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8134541036721983,
+      "best_macro_f1": 0.8162172463296044,
+      "threshold": 0.53
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8134725779679803,
+      "best_macro_f1": 0.8161888817974384,
+      "threshold": 0.53
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8154779296624083,
+      "best_macro_f1": 0.8154779296624083,
+      "threshold": 0.49
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.814779788002295,
+      "best_macro_f1": 0.8150557556659357,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.814779788002295,
+      "best_macro_f1": 0.8150557556659357,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.814779788002295,
+      "best_macro_f1": 0.8150557556659357,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.814779788002295,
+      "best_macro_f1": 0.8150557556659357,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.813495350744351,
+      "best_macro_f1": 0.8150061556395187,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8140970412575541,
+      "best_macro_f1": 0.8148557153889628,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8145349976336849,
+      "best_macro_f1": 0.8147955145328831,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8145349976336849,
+      "best_macro_f1": 0.8147955145328831,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8145349976336849,
+      "best_macro_f1": 0.8147955145328831,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8131305381780132,
+      "best_macro_f1": 0.8147828008986919,
+      "threshold": 0.72
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8144122700069859,
+      "best_macro_f1": 0.8146880441803699,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8141214217998379,
+      "best_macro_f1": 0.8143817704344811,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8109598035065213,
+      "best_macro_f1": 0.8143460173496209,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0003,
+      "macro_f1_at_half": 0.8126843703665927,
+      "best_macro_f1": 0.8138004915075909,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8100067164389244,
+      "best_macro_f1": 0.8137211943755192,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8123764877936381,
+      "best_macro_f1": 0.8136823566704272,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8105062382190745,
+      "best_macro_f1": 0.8136033256822075,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0002,
+      "macro_f1_at_half": 0.8124249298075854,
+      "best_macro_f1": 0.8135238874317081,
+      "threshold": 0.47
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.811107637992597,
+      "best_macro_f1": 0.8135174775539733,
+      "threshold": 0.53
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.811107637992597,
+      "best_macro_f1": 0.8135174775539733,
+      "threshold": 0.53
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8110213569934612,
+      "best_macro_f1": 0.8135028796096493,
+      "threshold": 0.53
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8122112357364174,
+      "best_macro_f1": 0.8132802524001559,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8119586467174129,
+      "best_macro_f1": 0.8132054800001409,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8121197504874184,
+      "best_macro_f1": 0.8131885470241823,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8120890768547451,
+      "best_macro_f1": 0.8131885234940014,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0001,
+      "macro_f1_at_half": 0.8118870167421446,
+      "best_macro_f1": 0.8131856415832863,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8122112357364174,
+      "best_macro_f1": 0.8130204667431726,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8111284305236918,
+      "best_macro_f1": 0.8126711541454336,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8115358335804481,
+      "best_macro_f1": 0.812627460592863,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8116265932346842,
+      "best_macro_f1": 0.8125721695550128,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8110356089083272,
+      "best_macro_f1": 0.8120820967868623,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8109448432467803,
+      "best_macro_f1": 0.8120238942834492,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8106693625391812,
+      "best_macro_f1": 0.8118687624241645,
+      "threshold": 0.45
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8090332663319214,
+      "best_macro_f1": 0.8118534038531486,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.0005,
+      "macro_f1_at_half": 0.8107493409677028,
+      "best_macro_f1": 0.8110086180342825,
+      "threshold": 0.51
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8074620266302175,
+      "best_macro_f1": 0.8105935333753627,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8075240972854885,
+      "best_macro_f1": 0.8104733434405332,
+      "threshold": 0.53
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8092415710575285,
+      "best_macro_f1": 0.810440579329891,
+      "threshold": 0.45
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8092415710575285,
+      "best_macro_f1": 0.810440579329891,
+      "threshold": 0.45
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8063954692654733,
+      "best_macro_f1": 0.8100518799702369,
+      "threshold": 0.57
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8069106087030313,
+      "best_macro_f1": 0.810042472459769,
+      "threshold": 0.57
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8081821753454395,
+      "best_macro_f1": 0.8099965831044099,
+      "threshold": 0.52
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8029815369103146,
+      "best_macro_f1": 0.8092043562030131,
+      "threshold": 0.76
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.8015538706842886,
+      "best_macro_f1": 0.8063210237774822,
+      "threshold": 0.59
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.8022286941006533,
+      "best_macro_f1": 0.8054590463908154,
+      "threshold": 0.56
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 5e-05,
+      "macro_f1_at_half": 0.8037410509640295,
+      "best_macro_f1": 0.8039798292008529,
+      "threshold": 0.82
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8021672469232006,
+      "best_macro_f1": 0.8035827570545491,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8016129741519746,
+      "best_macro_f1": 0.8030270419940186,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 3,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8016129741519746,
+      "best_macro_f1": 0.8030270419940186,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 5,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8016129741519746,
+      "best_macro_f1": 0.8030270419940186,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 10,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8016129741519746,
+      "best_macro_f1": 0.8030270419940186,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 10,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.800803493503104,
+      "best_macro_f1": 0.8022265706062877,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 12,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.800803493503104,
+      "best_macro_f1": 0.8022265706062877,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 14,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.800803493503104,
+      "best_macro_f1": 0.8022265706062877,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": 18,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.800803493503104,
+      "best_macro_f1": 0.8022265706062877,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.800803493503104,
+      "best_macro_f1": 0.8022265706062877,
+      "threshold": 0.46
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 0.0,
+      "macro_f1_at_half": 0.802009447368834,
+      "best_macro_f1": 0.802009447368834,
+      "threshold": 0.5
+    },
+    {
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "ccp_alpha": 2e-05,
+      "macro_f1_at_half": 0.802009447368834,
+      "best_macro_f1": 0.802009447368834,
+      "threshold": 0.5
+    },
+    {
+      "max_depth": 8,
+      "min_samples_leaf": 20,
+      "ccp_alpha": 0.001,
+      "macro_f1_at_half": 0.8002505967155585,
+      "best_macro_f1": 0.801672182484682,
+      "threshold": 0.46
+    }
+  ]
+}

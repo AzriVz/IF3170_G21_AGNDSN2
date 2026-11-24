@@ -1,0 +1,46 @@
+{
+  "args": {
+    "impute": "median",
+    "metric": "euclidean",
+    "vote": "distance",
+    "seed": 42,
+    "rounds": 3,
+    "grid": "0,0.5,1,1.5,2,3,4"
+  },
+  "weights": {
+    "days_before_arrival": 4.0,
+    "arrival_ord": 3,
+    "nightly_rate_idr": 2,
+    "special_requests": 2,
+    "booking_channel=Online Travel Agent": 1,
+    "booking_channel=Offline Agent": 1,
+    "booking_channel=Corporate": 1,
+    "total_nights": 1,
+    "num_adults": 0.5,
+    "needs_parking": 1,
+    "is_returning_guest": 1,
+    "weekday_nights": 0.5,
+    "arrival_day": 0.5,
+    "booking_ord": 0.5,
+    "log_lead": 0.5,
+    "month_sin": 1.0,
+    "meal_package=Room Only": 0.5
+  },
+  "macro_f1": 0.8453,
+  "k": 25,
+  "threshold": 0.49,
+  "note": "Dihentikan manual di tengah putaran 2 (tanpa perbaikan baru); bobot direkonstruksi dari log putaran 1.",
+  "log": [
+    "features=44 impute=median metric=euclidean vote=distance seed=42",
+    "start: F1=0.8340 k=40 thr=0.48",
+    "  round 1: num_adults 1.0 -> 0.5  F1 0.8340 -> 0.8350 (k=40)",
+    "  round 1: weekday_nights 0.0 -> 0.5  F1 0.8350 -> 0.8372 (k=16)",
+    "  round 1: days_before_arrival 3.0 -> 4.0  F1 0.8372 -> 0.8383 (k=25)",
+    "  round 1: arrival_day 0.0 -> 0.5  F1 0.8383 -> 0.8409 (k=20)",
+    "  round 1: booking_ord 0.0 -> 0.5  F1 0.8409 -> 0.8419 (k=20)",
+    "  round 1: log_lead 0.0 -> 0.5  F1 0.8419 -> 0.8435 (k=20)",
+    "  round 1: month_sin 0.0 -> 1.0  F1 0.8435 -> 0.8440 (k=20)",
+    "  round 1: meal_package=Room Only 0.0 -> 0.5  F1 0.8440 -> 0.8453 (k=25)",
+    "end round 1: F1=0.8453 k=25 thr=0.49 evals=265"
+  ]
+}

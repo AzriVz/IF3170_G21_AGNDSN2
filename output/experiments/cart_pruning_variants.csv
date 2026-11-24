@@ -1,0 +1,5 @@
+variant,leaves,depth,hold-out macro_f1 @0.5,accuracy
+no pruning,2468,33,0.8154081028727757,0.8365296803652968
+"pre-pruning (depth 10, min leaf 5)",315,10,0.8377051234910919,0.8589954337899544
+"Reduced Error Pruning (2/3 grow, 1/3 validation)",379,27,0.8332902845992423,0.857351598173516
+"cost-complexity (depth 12, ccp 2e-4), final",166,12,0.8398528095965647,0.862283105022831

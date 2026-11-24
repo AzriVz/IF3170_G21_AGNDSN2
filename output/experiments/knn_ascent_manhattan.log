@@ -1,0 +1,9 @@
+features=44 impute=median metric=manhattan vote=distance seed=42
+start: F1=0.8408 k=25 thr=0.48
+  round 1: num_adults 1.0 -> 0.5  F1 0.8408 -> 0.8413 (k=30)
+  round 1: weekend_nights 0.0 -> 0.5  F1 0.8413 -> 0.8439 (k=25)
+  round 1: arrival_month 0.0 -> 1.0  F1 0.8439 -> 0.8445 (k=20)
+  round 1: arrival_day 0.0 -> 1.0  F1 0.8445 -> 0.8478 (k=20)
+  round 1: log_price 0.0 -> 2.0  F1 0.8478 -> 0.8485 (k=20)
+  round 1: room_category=Type C 0.0 -> 0.5  F1 0.8485 -> 0.8491 (k=20)
+end round 1: F1=0.8491 k=20 thr=0.48 evals=177
