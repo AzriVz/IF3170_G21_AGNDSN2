@@ -2,6 +2,10 @@
 
 Tugas Besar 2 IF3170 Inteligensi Artifisial
 
+<p align="center">
+  <img src="pisa.gif" alt="Victoire Pisa">
+</p>
+
 Pada tugas besar ini, diselesaikan persoalan supervised learning berupa klasifikasi biner. Berdasarkan himpunan fitur historis dan detail reservasi tamu, sistem pembelajaran mesin dilatih untuk memetakan setiap data pemesanan ke dalam dua kelas diskret: pemesanan yang dibatalkan (1) dan pemesanan yang tidak dibatalkan (0).
 
 ## Pembagian Tugas
